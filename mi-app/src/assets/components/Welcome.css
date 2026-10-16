@@ -1,0 +1,170 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #1c1c1c;
+}
+
+button {
+  font: inherit;
+}
+
+.welcome {
+  position: relative;
+  width: 100%;
+  max-width: 390px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0 auto;
+  overflow: hidden;
+  color: #f5ede0;
+
+  background-image: url("./../../../public/images/academy-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.welcome-overlay {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 56px 12px 38px;
+
+  background: rgba(0, 0, 0, 0.32);
+}
+
+.welcome-logo {
+  display: block;
+  width: 193px;
+  height: 147px;
+  object-fit: contain;
+}
+
+.welcome-heading {
+  width: 100%;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.welcome-heading h1,
+.welcome-heading h2 {
+  margin: 0;
+  color: #f5ede0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+}
+
+.welcome-heading h1 {
+  font-size: 37px;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+.welcome-heading h2 {
+  margin-top: 5px;
+  font-size: 31px;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+.welcome-heading h2 em {
+  font-weight: 400;
+}
+
+.welcome-description {
+  margin: 24px 0 0;
+  color: #c9bea5;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.welcome-footer {
+  width: 100%;
+  margin-top: auto;
+}
+
+.apple-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  width: 100%;
+  height: 46px;
+  padding: 0 12px;
+  border: none;
+  border-radius: 24px;
+  background: #817762;
+  color: #fff;
+  cursor: pointer;
+}
+
+.apple-icon {
+  font-size: 19px;
+}
+
+.apple-button span:last-child {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.social-buttons button {
+  flex: 1;
+  height: 32px;
+  border: 1px solid #817762;
+  border-radius: 18px;
+  background: rgba(40, 38, 33, 0.75);
+  color: #f5ede0;
+  cursor: pointer;
+}
+
+.welcome-terms {
+  margin: 20px 0 0;
+  color: #e5ded1;
+  font-size: 9px;
+  line-height: 14px;
+  text-align: center;
+}
+
+@media (max-height: 650px) {
+  .welcome-overlay {
+    padding-top: 24px;
+    padding-bottom: 20px;
+  }
+
+  .welcome-logo {
+    height: 115px;
+  }
+
+  .welcome-heading {
+    margin-top: 4px;
+  }
+
+  .welcome-description {
+    margin-top: 12px;
+  }
+
+  .welcome-terms {
+    margin-top: 12px;
+  }
+}
